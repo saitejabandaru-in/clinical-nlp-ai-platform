@@ -1,0 +1,6 @@
+pipeline:
+  mode: lightweight-rules
+  deidentification: enabled
+  entity_linking: icd10
+  note: "Swap the rule-based modules with SciSpaCy, BioBERT, or transformer services for production-grade extraction."
+

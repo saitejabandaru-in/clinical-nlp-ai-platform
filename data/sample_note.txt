@@ -1,0 +1,16 @@
+Patient: John Smith
+MRN: A123456
+Date: 04/12/2026
+
+Chief Complaint:
+Patient reports fever, cough, and shortness of breath.
+
+History:
+History of diabetes and hypertension. Current medications include metformin and lisinopril.
+
+Assessment:
+Chest x-ray suggests pneumonia. Blood pressure is elevated, but glucose is controlled.
+
+Plan:
+Continue metformin and lisinopril. Start antibiotics and follow up if symptoms are worsening.
+

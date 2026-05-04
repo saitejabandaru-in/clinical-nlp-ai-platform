@@ -83,7 +83,7 @@ Built to mirror **real-world clinical NLP systems used in hospitals, EHR platfor
 
 ## 🧬 System Workflow
 
-
+```
 Clinical Notes (Unstructured Text)
 ↓
 Preprocessing (Cleaning + De-identification)
@@ -97,8 +97,7 @@ ICD Code Mapping
 Visualization (Word Cloud + Trends)
 ↓
 API Output (Structured Insights)
-
-```id="clinlpflow1"
+```
 
 ---
 
@@ -141,7 +140,7 @@ nlp-clinical-notes-analyzer/
 ├── requirements.txt
 └── README.md
 
-````id="clinlpstruct1"
+```
 
 ---
 
@@ -149,27 +148,37 @@ nlp-clinical-notes-analyzer/
 
 ### Clone repository
 ```bash
-git clone https://github.com/yourusername/nlp-clinical-notes-analyzer.git
-cd nlp-clinical-notes-analyzer
-````
+git clone https://github.com/saitejabandaru-in/clinical-nlp-ai-platform.git
+cd clinical-nlp-ai-platform
+```
 
 ### Install dependencies
 
-```bash id="clinlpinstall"
+```bash
 pip install -r requirements.txt
-```
-
-### Download NLP model
-
-```bash id="clinlpspacy"
-python -m spacy download en_core_sci_lg
 ```
 
 ### Run analysis
 
-```bash id="clinlprun"
-python -m models.ner.clinical_ner_model --input data/sample_note.txt
+```bash
+python -m clinical_nlp_ai_platform --input data/sample_note.txt --pretty
 ```
+
+### Run API
+
+```bash
+uvicorn api.serve:app --reload
+```
+
+Then call `POST /analyze` with a JSON body such as:
+
+```json
+{
+  "text": "Patient has diabetes and hypertension. Metformin is tolerated."
+}
+```
+
+> This repository is an engineering demo, not a medical device or clinical decision system. Outputs should be reviewed by qualified professionals before any real-world use.
 
 ---
 
