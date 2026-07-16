@@ -1,5 +1,7 @@
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:141E30,100:243B55&height=200&section=header&text=NLP%20Clinical%20Notes%20Analyzer&fontSize=36&fontColor=E6EEF3&animation=fadeIn&fontAlignY=40" />
+
+  <img src="https://img.shields.io/github/actions/workflow/status/saitejabandaru-in/clinical-nlp-ai-platform/python-app.yml?branch=main&label=Build&style=flat-square"/>
 </p>
 
 <p align="center">
@@ -248,3 +250,13 @@ If you find this useful:
 ---
 
 > Turning clinical text into structured intelligence for better healthcare decisions.
+
+
+## Contributing
+
+Contributions are welcome! Please follow these steps:
+1. Fork the repository.
+2. Create a feature branch (`git checkout -b feature/amazing-feature`).
+3. Run tests before committing.
+4. Push to the branch (`git push origin feature/amazing-feature`).
+5. Open a Pull Request.
